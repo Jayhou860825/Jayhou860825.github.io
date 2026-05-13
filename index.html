@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的第一个网页</title>
+    <title>我的个人主页</title>
     <style>
         * {
             margin: 0;
@@ -18,51 +18,106 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            color: white;
+            color: #2d3436;
             text-align: center;
             padding: 20px;
         }
 
-        .box {
-            background: rgba(0, 0, 0, 0.3);
+        .card {
+            background: rgba(255, 255, 255, 0.95);
             padding: 50px 30px;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
             max-width: 500px;
             width: 100%;
         }
 
-        h1 {
-            font-size: 32px;
-            margin-bottom: 20px;
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: #dfe6e9;
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 48px;
+            color: #636e72;
         }
 
-        p {
-            font-size: 18px;
-            margin-bottom: 15px;
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .intro {
+            color: #636e72;
+            margin-bottom: 20px;
             line-height: 1.6;
         }
 
+        .info {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .info li {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
         .btn {
-            display: inline-block;
-            margin-top: 20px;
             padding: 12px 25px;
-            background: #fff;
-            color: #6c5ce7;
             border-radius: 30px;
             text-decoration: none;
             font-weight: bold;
             font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: #6c5ce7;
+            color: white;
+        }
+
+        .btn-secondary {
+            background: #74b9ff;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <div class="box">
-        <h1>🎉 我的第一个网页</h1>
-        <p>你好！我成功创建了属于自己的网站！</p>
-        <p>这是我用 GitHub Pages 搭建的第一个页面</p>
-        <p>超级简单，人人都能学会！</p>
-        <a href="#" class="btn">点我试试</a>
+    <div class="card">
+        <!-- 头像区域，你可以改成自己的头像文字 -->
+        <div class="avatar">👨‍💻</div>
+        
+        <!-- 名字和介绍 -->
+        <h1>Jayhou</h1>
+        <p class="intro">
+            你好！我是一名热爱技术的工程师<br>
+            喜欢折腾代码、探索新事物<br>
+            这里是我的第一个个人网页
+        </p>
+
+        <!-- 信息列表 -->
+        <ul class="info">
+            <li>📍 坐标：上海</li>
+            <li>💼 职业：热仿真工程师</li>
+            <li>🎯 爱好：代码、硬件、户外</li>
+        </ul>
+
+        <!-- 按钮 -->
+        <div class="btn-group">
+            <a href="#" class="btn btn-primary">我的项目</a>
+            <a href="#" class="btn btn-secondary">联系我</a>
+        </div>
     </div>
 </body>
 </html>
